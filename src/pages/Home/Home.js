@@ -4,6 +4,7 @@ import Business from './Business';
 import Contuct from './Contuct';
 import Footer from './Footer';
 import Parts from './Parts';
+import Review from './Review';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner/>
             <Parts/>
             <Business/>
+            <Review/>
             <Contuct/>
             <Footer/>
         </div>
