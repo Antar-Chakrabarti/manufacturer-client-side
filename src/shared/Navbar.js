@@ -13,7 +13,7 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/'>My Profile</Link></li>
-        <li><Link to='/'>Blog</Link></li>
+        <li><Link to='/blog'>Blog</Link></li>
         {user && <li><Link to='/dashboard'>Dashboard</Link></li>}
         <li><Link to='/'>About US</Link></li>
         {user ? <li><Link to='/login' onClick={logout}>Log Out</Link></li> :
