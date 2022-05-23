@@ -1,42 +1,42 @@
 [
   {
-    "name": "Anonimus Parts",
-    "image":"https://i.ibb.co/syZHfh5/parts-1.jpg",
+    "name": "FRONT_FAIRING_DISCOVER100",
+    "image":"https://i.ibb.co/B4Zjh16/FRONT-FAIRING-DISCOVER100.jpg",
+    "price":180,
+    "Quantity":500,
+    "desc":"This product will give you better performence and extra banifit"
+  },
+  {
+    "name": "Quad Bikes Swing Arm",
+    "image":"https://i.ibb.co/HB1pjbd/Mild-Steel-Black-Discover-St125-Bend.jpg",
     "price":180,
     "Quantity":5000,
     "desc":"This product will give you better performence and extra banifit"
   },
   {
-    "name": "Anonimus Parts",
-    "image":"https://i.ibb.co/syZHfh5/parts-1.jpg",
+    "name": "Mild Steel Black Discover St125 Bend",
+    "image":"https://i.ibb.co/G9T4NB5/bike-chain.jpg",
+    "price":12,
+    "Quantity":500,
+    "desc":"This product will give you better performence and extra banifit"
+  },
+  {
+    "name": "Accelerator Adjustable Alloy Wheel",
+    "image":"https://i.ibb.co/GCcZ5T6/bike-engine.jpg",
     "price":180,
+    "Quantity":500,
+    "desc":"This product will give you better performence and extra banifit"
+  },
+  {
+    "name": "Black Bike Pillion Holder Hook",
+    "image":"https://i.ibb.co/sbgPy4C/Black-Bike-Pillion-Holder-Hook.jpg",
+    "price":80,
     "Quantity":5000,
     "desc":"This product will give you better performence and extra banifit"
   },
   {
-    "name": "Anonimus Parts",
-    "image":"https://i.ibb.co/syZHfh5/parts-1.jpg",
-    "price":180,
-    "Quantity":5000,
-    "desc":"This product will give you better performence and extra banifit"
-  },
-  {
-    "name": "Anonimus Parts",
-    "image":"https://i.ibb.co/syZHfh5/parts-1.jpg",
-    "price":180,
-    "Quantity":5000,
-    "desc":"This product will give you better performence and extra banifit"
-  },
-  {
-    "name": "Anonimus Parts",
-    "image":"https://i.ibb.co/syZHfh5/parts-1.jpg",
-    "price":180,
-    "Quantity":5000,
-    "desc":"This product will give you better performence and extra banifit"
-  },
-  {
-    "name": "Anonimus Parts",
-    "image":"https://i.ibb.co/syZHfh5/parts-1.jpg",
+    "name": "Iron Star Acc Bend",
+    "image":"https://i.ibb.co/5Kvp97z/Iron-Star-Acc-Bend.webp",
     "price":180,
     "Quantity":5000,
     "desc":"This product will give you better performence and extra banifit"
