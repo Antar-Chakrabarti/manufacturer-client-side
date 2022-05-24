@@ -23,7 +23,7 @@ const Login = () => {
     let from = location.state?.from?.pathname || '/';
     let signInError;
     useEffect(() => {
-        if (token) {
+        if (user || gUser) {
             navigate(from, { replace: true })
         }
     }, [token, from, navigate]);
