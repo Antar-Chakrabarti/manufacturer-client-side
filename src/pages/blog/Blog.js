@@ -41,6 +41,26 @@ const Blog = () => {
                     <p>To manage it, however, you should opt for a third-party solution. Many developers are inclined to use built-in React features like the Context API to manage their state.</p>
                 </div>
             </div>
+            <div className='my-5'>
+                <h2 className="text-2xl my-5">3. How does prototypical inheritance work?</h2>
+                <div>
+                    prototypical inheritance refers to the ability to access object properties from another object. We use a JavaScript prototype to add new properties and methods to an existing object constructor. We can then essentially tell our JS code to inherit properties from a prototype. Prototypical inheritance allows us to reuse the properties or methods from one JavaScript object to another through a reference pointer function.
+                </div>
+            </div>
+            <div className='my-5'>
+                <h2 className="text-2xl my-5">4. Why you do not set the state directly in React.</h2>
+                <div>
+                    <p>In React, whenever a component is rendering either in theMounting phase or in Updating Phase, it always renders all the components that are in its tree.</p>
+                    <p> Stateless functional component is a component that has no state or constructor or any lifecycle hooks and are fully controlled by their parents. They only render a react component.</p>
+                </div>
+            </div>
+            <div className='my-5'>
+                <h2 className="text-2xl my-5">5. What is a unit test? Why should write unit tests?</h2>
+                <div>
+                    <p>Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. This testing methodology is done during the development process by the software developers and sometimes QA staff.  The main objective of unit testing is to isolate written code to test and determine if it works as intended.</p>
+                    <p>Unit testing involves only those characteristics that are vital to the performance of the unit under test. This encourages developers to modify the source code without immediate concerns about how such changes might affect the functioning of other units or the program as a whole. Once all of the units in a program have been found to be working in the most efficient and error-free manner possible, larger components of the program can be evaluated by means of integration testing. Unit tests should be performed frequently, and can be done manually or can be automated.</p>
+                </div>
+            </div>
         </div>
     );
 };
