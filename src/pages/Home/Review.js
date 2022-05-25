@@ -7,10 +7,8 @@ const Review = () => {
             .then(res => res.json())
             .then((data) => {
                 setReview(data)
-                console.log(data)
             })
     }, [])
-    console.log(review)
     return (
         <>
             <div className="text-center text-4xl font-bold text-secondary">Customer Review</div>
