@@ -9,7 +9,7 @@ const Purchase = () => {
     const [user, loading, error] = useAuthState(auth);
     const { id } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://floating-chamber-93573.herokuapp.com/products/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id])
@@ -28,7 +28,7 @@ const Purchase = () => {
             phone: event.target.phone.value,
 
         }
-        fetch(`http://localhost:5000/place-order`,{
+        fetch(`https://floating-chamber-93573.herokuapp.com/place-order`,{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

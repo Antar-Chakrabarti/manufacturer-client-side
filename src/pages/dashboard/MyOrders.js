@@ -7,7 +7,7 @@ const MyOrders = () => {
     const [user, loading, error] = useAuthState(auth);
     const email = user.email;
     useEffect(() => {
-        fetch(`http://localhost:5000/place-order`,{
+        fetch(`https://floating-chamber-93573.herokuapp.com/place-order`,{
             method: 'GET',
             headers: {
                 'content-type': 'application/json'
