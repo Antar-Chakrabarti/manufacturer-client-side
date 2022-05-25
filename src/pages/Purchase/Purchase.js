@@ -17,6 +17,7 @@ const Purchase = () => {
 
     const placingOrder = (event) => {
         event.preventDefault();
+        const email = user.email;
         const parts = {
             name: name,
             img: image,
@@ -27,7 +28,7 @@ const Purchase = () => {
             phone: event.target.phone.value,
 
         }
-        fetch('http://localhost:5000/place-order',{
+        fetch(`http://localhost:5000/place-order`,{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
@@ -55,10 +56,10 @@ const Purchase = () => {
                         <input type="number" name='quantity' placeholder='Set Quantity' className="input input-bordered input-info" />
                         <input type="number" name='phone' placeholder='Your Phone Number' className="input input-bordered input-info" />
                         <input type="address" name='address' placeholder='your address' className="input input-bordered input-info" />
-                        <input type='submit' className="btn btn-primary"/>
+                        <input type='submit' value='Place Your Order' className="btn btn-primary text-white"/>
                     </form>
                 </div>
-            </div>{/*  */}
+            </div>
         </div>
     );
 };

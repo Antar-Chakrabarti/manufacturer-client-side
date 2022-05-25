@@ -5,22 +5,23 @@ const useToken = user => {
     useEffect(() => {
         const email = user?.user?.email;
         const currentUser = { email: email };
-        if (email) {
-            fetch(/* `https://guarded-hamlet-53272.herokuapp.com/user/${email}`, */ {
+        if(email){
+            fetch(`http://localhost:5000/user/${email}`,{
                 method: 'PUT',
-                headers: {
+                headers:{
                     'content-type': 'application/json'
                 },
-                body: JSON.stringify(currentUser)
+                body:JSON.stringify(currentUser)
             })
-                .then(res => res.json())
-                .then(data => {
-                    console.log('data inside useToken', data);
-                    const accessToken = data.token;
-                    localStorage.setItem('accessToken', accessToken)
-                    setToken(accessToken)
-                })
+            .then(res => res.json())
+            .then(data => {
+                console.log('data inside useToken', data)
+                const accessToken = data.token;
+                localStorage.setItem('accessToken', accessToken)
+                setToken(accessToken)
+            })
         }
+        
     }, [user]);
     return [token];
 }
