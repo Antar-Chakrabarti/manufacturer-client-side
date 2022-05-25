@@ -4,13 +4,14 @@ import auth from '../../firebase.init';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const email = user.email;
     useEffect(() => {
-        fetch(`https://floating-chamber-93573.herokuapp.com/place-order`,{
+        fetch(`http://localhost:5000/place-order`,{
             method: 'GET',
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
+                'authorization': `Bearer ${localStorage.getItem('accessToken')}`
             }
         })
             .then(res => res.json())
