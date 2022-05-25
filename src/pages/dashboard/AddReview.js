@@ -12,7 +12,7 @@ const AddReview = () => {
             desc: event.target.review.value,
             img: image
         }
-        fetch(`http://localhost:5000/review`,{
+        fetch(`https://floating-chamber-93573.herokuapp.com/review`,{
             method: 'POST',
             headers: {
                 'content-type':'application/json'

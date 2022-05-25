@@ -2,7 +2,7 @@ import { useQuery } from 'react-query';
 import Loading from '../../shared/Loading';
 
 const MakeAdmin = () => { 
-    const {data:users, isLoading, refetch} = useQuery('users', ()=> fetch('http://localhost:5000/user',{
+    const {data:users, isLoading, refetch} = useQuery('users', ()=> fetch('https://floating-chamber-93573.herokuapp.com/user',{
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -15,7 +15,7 @@ const MakeAdmin = () => {
     }
 
     const makeAdmin =({email})=>{
-        fetch(`http://localhost:5000/user/admin/${email}`,{
+        fetch(`https://floating-chamber-93573.herokuapp.com/user/admin/${email}`,{
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
