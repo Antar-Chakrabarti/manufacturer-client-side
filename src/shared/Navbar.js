@@ -12,10 +12,9 @@ const Navbar = () => {
     const [user] = useAuthState(auth);
     const menuItems = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/'>My Profile</Link></li>
+        <li><Link to='/portfolio'>My Portfolio</Link></li>
         <li><Link to='/blog'>Blog</Link></li>
         {user && <li><Link to='/dashboard'>Dashboard</Link></li>}
-        <li><Link to='/'>About US</Link></li>
         {user ? <li><Link to='/login' onClick={logout}>Log Out</Link></li> :
         <li><Link to='/login'>Login</Link></li>}
     </>

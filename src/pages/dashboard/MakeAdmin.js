@@ -1,4 +1,5 @@
 import { useQuery } from 'react-query';
+import { toast } from 'react-toastify';
 import Loading from '../../shared/Loading';
 
 const MakeAdmin = () => { 
@@ -24,6 +25,7 @@ const MakeAdmin = () => {
         .then(res => res.json())
         .then(data =>{
             refetch();
+            toast.success('Successfully added admin')
         })
     }
     return (

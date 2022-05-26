@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const MyOrders = () => {
@@ -17,6 +18,12 @@ const MyOrders = () => {
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [user])
+    const cancleOrder =()=>{
+        toast.success('I will do it soon')
+    }
+    const paymentOrder =()=>{
+        toast.success('I will add payment system soon')
+    }
     return (
         <div>
             <h2 className='text-4xl text-center text-info my-10'>My Orders</h2>
@@ -38,8 +45,8 @@ const MyOrders = () => {
                                     <th>{index + 1}</th>
                                     <td>{order.userName}</td>
                                     <td>{order.user}</td>
-                                    <td><button class="btn btn-xs btn-warning">cancel</button></td>
-                                    <td><button class="btn btn-xs btn-info">pay</button></td>
+                                    <td><button onClick={cancleOrder} class="btn btn-xs btn-warning">cancel</button></td>
+                                    <td><button onClick={paymentOrder} class="btn btn-xs btn-info">pay</button></td>
                                 </tr>)
                         }
 

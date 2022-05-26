@@ -1,4 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Blog from './pages/blog/Blog';
 import AddProduct from './pages/dashboard/AddProduct';
@@ -10,6 +12,7 @@ import ManageProducts from './pages/dashboard/ManageProducts';
 import MyOrders from './pages/dashboard/MyOrders';
 import MyProfile from './pages/dashboard/MyProfile';
 import Home from './pages/Home/Home';
+import Portfoli from './pages/portfolio/Portfoli';
 import Purchase from './pages/Purchase/Purchase';
 import Login from './shared/Login';
 import Navbar from './shared/Navbar';
@@ -38,10 +41,12 @@ function App() {
           <Route path='manage-product' element={<ManageProducts/>}/>
         </Route>
         <Route path='/blog' element={<Blog/>}/>
+        <Route path='/portfolio' element={<Portfoli/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
